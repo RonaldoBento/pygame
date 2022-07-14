@@ -3,8 +3,8 @@
 # Projeto Snake Game — Jogo da Serpente
 
 ## Estou desenvolvendo este projeto para aprender mais sobre desenvolvimento de jogos utilizando como ferramenta o <strong>Pygame</strong> que é uma biblioteca de jogos multiplataforma feita para ser utilizada em conjunto com a linguagem de programação Python.
-<strong>Snake</strong> (Serpente, também conhecido como “jogo da cobrinha”) é um jogo que ficou conhecido por inúmeras versões com diversas imitações em videogames e computadores. O jogo foi lançado para celulares Nokia em 1998 e se tornou muito popular, inclusive no Brasil.<br>
-O jogador controla uma longa e fina serpente que se arrasta pela tela, coletando comida (ou algum outro item), não podendo colidir com seu próprio corpo ou as “paredes” que cercam a área de jogo. Cada vez que a serpente come um pedaço da comida, sua cauda cresce, aumentando a dificuldade do jogo. O jogador controla a direção da cabeça da serpente (para cima, para baixo, esquerda e direita).
+### <strong>Snake</strong> (Serpente, também conhecido como “jogo da cobrinha”) é um jogo que ficou conhecido por inúmeras versões com diversas imitações em videogames e computadores. O jogo foi lançado para celulares Nokia em 1998 e se tornou muito popular, inclusive no Brasil.<br>
+O jogador controla uma longa e fina serpente que se arrasta pela tela, coletando comida (ou algum outro item), não podendo colidir com seu próprio corpo ou as “paredes” que cercam a área de jogo. Cada vez que a serpente come um pedaço da comida, sua cauda cresce, aumentando a dificuldade do jogo. O jogador controla a direção da cabeça da serpente (para cima, para baixo, esquerda e direita). ###
 
 <img src="projeto.png" alt="logo do game snake no formato png"><br>
 
