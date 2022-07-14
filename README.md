@@ -8,7 +8,7 @@ O jogador controla uma longa e fina serpente que se arrasta pela tela, coletando
 
 <img src="projeto.png" alt="logo do game snake no formato png"><br>
 
-<p stle="text-align:justify;font-size:1.2em;"><strong>1º Passo:</strong>Criei uma janela vazia com o código base para o jogo.<br>
+<p stle="text-align:justify;font-size:1.2em;"><strong>1º Passo:</strong> Criei uma janela vazia com o código base para o jogo.<br>
 screen = pygame.display.set_mode((600, 600))<br>
 
 <strong>2º Passo:</strong> Desenhei a serpente estática na tela.
