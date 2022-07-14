@@ -1,6 +1,6 @@
 # pygame
 # Programa Desenvolvido em Python 03
-<p style=" text-align: center; font-size:1.5em;"><strong>Projeto Snake Game — Jogo da Serpente</strong></p><br>
+# Projeto Snake Game — Jogo da Serpente
 
 <p style=" text-align: justify; font-size:1.2em;">Estou desenvolvendo este projeto para aprender mais sobre desenvolvimento de jogos utilizando como ferramenta o <strong>Pygame</strong> que é uma biblioteca de jogos multiplataforma feita para ser utilizada em conjunto com a linguagem de programação Python.
 <strong>Snake</strong> (Serpente, também conhecido como “jogo da cobrinha”) é um jogo que ficou conhecido por inúmeras versões com diversas imitações em videogames e computadores. O jogo foi lançado para celulares Nokia em 1998 e se tornou muito popular, inclusive no Brasil.<br>
