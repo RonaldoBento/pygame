@@ -2,11 +2,14 @@
 # Programa Desenvolvido em Python 03
 # Projeto Snake Game — Jogo da Serpente
 
-## Estou desenvolvendo este projeto para aprender mais sobre desenvolvimento de jogos utilizando como ferramenta o <strong>Pygame</strong> que é uma biblioteca de jogos multiplataforma feita para ser utilizada em conjunto com a linguagem de programação Python.
-<p><strong>Snake</strong> (Serpente, também conhecido como “jogo da cobrinha”) é um jogo que ficou conhecido por inúmeras versões com diversas imitações em videogames e computadores. O jogo foi lançado para celulares Nokia em 1998 e se tornou muito popular, inclusive no Brasil.<br>
-O jogador controla uma longa e fina serpente que se arrasta pela tela, coletando comida (ou algum outro item), não podendo colidir com seu próprio corpo ou as “paredes” que cercam a área de jogo. Cada vez que a serpente come um pedaço da comida, sua cauda cresce, aumentando a dificuldade do jogo. O jogador controla a direção da cabeça da serpente (para cima, para baixo, esquerda e direita).
-
 <img src="projeto.png" alt="logo do game snake no formato png"><br>
+
+<p stle="text-align:justify;font-size:1.2em;">Estou desenvolvendo este projeto para aprender mais sobre desenvolvimento de jogos utilizando como ferramenta o <strong>Pygame</strong> que é uma biblioteca de jogos multiplataforma feita para ser utilizada em conjunto com a linguagem de programação Python.<br>
+
+<strong>Snake</strong> (Serpente, também conhecido como “jogo da cobrinha”) é um jogo que ficou conhecido por inúmeras versões com diversas imitações em videogames e computadores. O jogo foi lançado para celulares Nokia em 1998 e se tornou muito popular, inclusive no Brasil.<br>
+O jogador controla uma longa e fina serpente que se arrasta pela tela, coletando comida (ou algum outro item), não podendo colidir com seu próprio corpo ou as “paredes” que cercam a área de jogo. Cada vez que a serpente come um pedaço da comida, sua cauda cresce, aumentando a dificuldade do jogo. O jogador controla a direção da cabeça da serpente (para cima, para baixo, esquerda e direita).</p><br>
+
+<img src="modelo.png" alt="logo do game snake no formato png"><br>
 
 <p stle="text-align:justify;font-size:1.2em;"><strong>1º Passo:</strong> Criei uma janela vazia com o código base para o jogo.<br>
 screen = pygame.display.set_mode((600, 600))<br>
@@ -40,9 +43,9 @@ Implementei uma função para detectar se a cabeça da cobra colidiu com a maç�
 <strong>10º Passo:</strong> Adicionei um texto de Game Over para ser utilizado no lugar de simplesmente fechar o jogo quando a cobra colide com as bordas ou consigo mesma. Utilizei novamente o objeto Font. - Outro local para a localização do retângulo com o texto pode ser o (game_over_rect.midtop = (600 / 2, 250)) - Criar um loop fora do loop principal do jogo para ficar imprimindo a tela de Game Over até o evento de quit. - Funções de ajuda: pygame.display.update(), pygame.time.wait(500).</p>
 
 
-## IMPORTANTE ##
+## IMPORTANTE:
 
-<p style="text-size:1.2em; text-align:justify;">Você tem todo o direito de usar esse material para seu próprio aprendizado. Espero que seja útil o conteúdo disponibilizado.</p><br> 
+<p style="text-size:1.2em; text-align:justify;">Você tem todo o direito de usar esse material para seu próprio aprendizado. Espero que seja útil o conteúdo disponibilizado. Para rodar o jogo no seu computador ou em outro dispositivo é preciso ter instalado o Python 03.</p> 
 
 
 
