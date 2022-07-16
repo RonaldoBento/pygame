@@ -46,7 +46,7 @@ Implementei uma função para detectar se a cabeça da cobra colidiu com a maç�
 <strong>10º Passo:</strong> Adicionei um texto de Game Over para ser utilizado no lugar de simplesmente fechar o jogo quando a cobra colide com as bordas ou consigo mesma. Utilizei novamente o objeto Font. - Outro local para a localização do retângulo com o texto pode ser o (game_over_rect.midtop = (600 / 2, 250)) - Criar um loop fora do loop principal do jogo para ficar imprimindo a tela de Game Over até o evento de quit. - Funções de ajuda: pygame.display.update(), pygame.time.wait(500).</p>
 
 ## Como Executar um Script Python?
-<p>Para instalar o Python no seu sistema operacional Windows, você precisa baixar o instalador. Acesse o site oficial <a href="https://www.python.org/downloads/" target="_blank">neste link</a> e clique em download.</p><br>
+<p>Para instalar o Python no seu sistema operacional Windows, você precisa baixar o instalador. Acesse o site oficial <a href="https://www.python.org/downloads/" target="_blank">neste link</a> e clique em download.</p>
 
 <p>Para executar um script Python na linha de comando, ele precisa estar gravado em um arquivo com a extensão “.py”. Abra o prompt de comando no Windows, ou o terminal no Linux/MacOS, e digite python nome do arquivo.py lista de argumentos. Para que isso funcione, o interpretador Python precisa estar instalado na máquina e seu caminho deve estar configurado na variável PATH, fazendo com que o arquivo executável python esteja acessível a partir da linha de comando.</p>
 
