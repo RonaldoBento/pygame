@@ -33,9 +33,12 @@ A serpente deve começar o jogo com uma direção pré-definida. Como as nossas 
 <strong>4º Passo:</strong> Acrescentei um clock. Ao fazer a serpente se movimentar no passo anterior  gerou um movimento muito rápido e para consertar esse problema devemos adicionar um clock de forma que a tela só seja redesenhada depois de um certo tempo, fazendo com que a serpente se mova mais lentamente: clock = pygame.time.Clock().<br>
 
 <strong>5º Passo:</strong> Desenhei a maça na tela. Como foi definido que nossos quadrinhos são 10x10 esse também será o tamanho da nossa maçã. Importante que a maçã deve ser desenhada dentro dos limites da tela. Como a nossa tela é (600x600) a última coordenada x e y que a maçã pode obter é 590 (pois ela possui tamanho 10). Criei uma função para obter as coordenadas dentro dos limites estabelecido. A maçã tem que ser desenhada alinhada com a cobra e as funções/objetos (Surface, fill e blit.) são relevantes para esse passo. Claro que a cor da maçã é vermelha representada em RGB por (255,0,0).<br> 
+  
 <strong>6º Passo:</strong> A serpente deve colidi com a maçã para comer a mesma e “crescer” um segmento.<br>
 Implementei uma função para detectar se a cabeça da cobra colidiu com a maçã.<br> 
+  
 <strong>7º Passo:</strong> Adicionei detecção de colisão da cobra com a janela do jogo e com seu corpo. Para esse passo devemos identificar se a cabeça da cobra atingiu os limites da janela (nossas coordenadas vão de 0 a 600 nos eixos x e y). Quando ocorrer a colisão o jogo deverá ser encerrado com (pygame.quit() e exit()) com uma tela de Game Over.<br>
+  
 <strong>8º Passo:</strong> Adicionei linhas de grid em nossa janela para marcar os segmentos. A cada 10 unidades na vertical e na horizontal desenhei uma linha utilizando uma função.<br>
 
 <strong>9º Passo:</strong> Adicionar score(pontos). Inicialmente o jogador começa com 0 ponto. Cada maçã representa um ponto (ou quantos pontos forem definidos). Para adicionar o score deve-se utilizar o módulo pygame.font, que é um módulo para carregar e renderizar fontes. game_over_font = pygame.font.Font('freesansbold.ttf', 70). Criar um variável para fazer a contagem de pontos que inicia com 0 e é somada a cada vez que a cobra colide com a maçã. - Utilizar o método pygame.font.Front.render(text, antialias, color) para desenhar um texto em uma superfície. Antialias é um bool que define se os caracteres devem ter as bordas suavizadas if true the characters will have smooth edges. A função get_rect do objeto Font retorna um retângulo que deverá ser posicionado na tela utilizando o método topleft(x, y).<br> 
@@ -48,7 +51,7 @@ Implementei uma função para detectar se a cabeça da cobra colidiu com a maç�
 <p>Para executar um script Python na linha de comando, ele precisa estar gravado em um arquivo com a extensão “.py”. Abra o prompt de comando no Windows, ou o terminal no Linux/MacOS, e digite python nome do arquivo.py lista de argumentos. Para que isso funcione, o interpretador Python precisa estar instalado na máquina e seu caminho deve estar configurado na variável PATH, fazendo com que o arquivo executável python esteja acessível a partir da linha de comando.</p>
 
 ## Como instalar o Pygame pelo PIP?
-<p>Depois de instalar o Python, instale o PyGame por meio da linha de comando (ou do terminal no VS Code) digitando python -m pip install -U pygame --user . Se tudo estiver certo, o jogo abrirá uma janela. Feche a janela quando terminar de jogar.</p>
+<p>Depois de instalar o Python, instale o PyGame por meio da linha de comando (ou do terminal no VS Code) digitando python -m pip install -U pygame --user . Se tudo estiver certo, o jogo abrirá uma janela. Feche a janela quando terminar de jogar.</p><br>
 
 ## IMPORTANTE:
 
