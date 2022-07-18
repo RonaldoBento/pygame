@@ -55,6 +55,8 @@ Implementei uma função para detectar se a cabeça da cobra colidiu com a maç�
 
 ## IMPORTANTE:
 
+ [![NPM](https://img.shields.io/npm/l/react)](https://github.com/RonaldoBento/pygame/blob/main/LICENSE) 
+
 <p align="center">Você tem todo o direito de usar esse material para seu próprio aprendizado. Espero que seja útil o conteúdo disponibilizado.</p> 
 
 
