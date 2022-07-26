@@ -12,11 +12,9 @@ _**Snake**_ (Serpente, também conhecido como “jogo da cobrinha”) é um jogo
 O jogador controla uma longa e fina serpente que se arrasta pela tela, coletando comida (ou algum outro item), não podendo colidir com seu próprio corpo ou as “paredes” que cercam a área de jogo. Cada vez que a serpente come um pedaço da comida, sua cauda cresce, aumentando a dificuldade do jogo. O jogador controla a direção da cabeça da serpente (para cima, para baixo, esquerda e direita).<br>
 
 
-
-<br><img src="modelo.png" alt="logo do game snake no formato png"><br>
-
 # Screenshot do Game
 
+<br><img src="modelo.png" alt="logo do game snake no formato png"><br>
 
 **1º Passo:** Criei uma janela vazia com o código base para o jogo.<br>
 `screen = pygame.display.set_mode((600, 600))`<br>
