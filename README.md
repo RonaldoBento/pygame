@@ -20,11 +20,11 @@ O jogador controla uma longa e fina serpente que se arrasta pela tela, coletando
 `screen = pygame.display.set_mode((600, 600))`<br>
 
 **2º Passo:** Desenhei a serpente estática na tela.
-Ela é um conjunto de coordenadas (X, Y). Utilizei o tamanho de cada _**“pixel”**_ (10x10), ou seja cada parte da serpente são quadradinhos de 10 x 10.<br>
+Ela é um conjunto de coordenadas (X, Y). Utilizei o tamanho de cada _**“pixel”**_ (10 x 10), ou seja cada parte da serpente são quadradinhos de 10 x 10.<br>
 A serpente possui 5 segmentos nas posições: [(200,200), (210,200), (220,200), (230,200), (240,200)].<br>
 Cada quadrinho da serpente é representado por um Surface do pygame. O pygame.Surface — objeto que recebe em seu construtor seu tamanho (Width, Height). Também tem o método fill que recebe como argumento uma sequência RGB (no caso recebeu a sequência (16, 112, 35) uma tonalidade de verde.<br>
 
-Antes de desenhar qualquer coisa na tela é importante limpar a mesma. O objeto Display do pygame possui um método `screen.fill((0,0,0))` para limpar atela.
+Antes de desenhar qualquer coisa na tela é importante limpar a mesma. O objeto Display do pygame possui um método `screen.fill((0,0,0))` para limpar a tela.
 Para desenhar a serpente deve-se iterar por todas as duas coordenadas e utilizar o método blit `(surface,pos)` do display para desenhar a pele da cobrinha (Surface) em uma determinada posição.<br>
 
 **3º Passo:** para fazer com que a serpente se movimente, modifiquei as coordenadas que a definem de acordo com os 5 segmentos já mencionados para ela se mover para a esquerda, por exemplo, as coordenadas devem ficar `[(190,200), (200,200), (210,200) (220,200), (230,200)]`. Isso significa que, iniciando da posição mais à direita da serpente, cada posição recebe as coordenadas da posição imediatamente anterior e a última posição (como não existe posição anterior a ela) nesse caso se move 10 para a direita (o que significa subtrair 10 da coordenada x).<br>
@@ -38,7 +38,7 @@ Defini macros para o movimento da serpente que representam as posições:<br>
 
 **4º Passo:** Acrescentei um _**clock**_. Ao fazer a serpente se movimentar no passo anterior  gerou um movimento muito rápido e para consertar esse problema devemos adicionar um clock de forma que a tela só seja redesenhada depois de um certo tempo, fazendo com que a serpente se mova mais lentamente: `clock = pygame.time.Clock()`.<br>
 
-**5º Passo:** Desenhei a maça na tela. Como foi definido que nossos quadrinhos são 10x10 esse também será o tamanho da nossa maçã. Importante que a maçã deve ser desenhada dentro dos limites da tela. Como a nossa tela é (600x600) a última coordenada x e y que a maçã pode obter é 590 (pois ela possui tamanho 10). Criei uma função para obter as coordenadas dentro dos limites estabelecido. A maçã tem que ser desenhada alinhada com a cobra e as funções/objetos _**(Surface, fill e blit.)**_ são relevantes para esse passo. Claro que a cor da maçã é vermelha representada em RGB por (255,0,0).<br> 
+**5º Passo:** Desenhei a maça na tela. Como foi definido que nossos quadrinhos são 10 x 10 esse também será o tamanho da nossa maçã. Importante que a maçã deve ser desenhada dentro dos limites da tela. Como a nossa tela é (600 x 600) a última coordenada x e y que a maçã pode obter é 590 (pois ela possui tamanho 10). Criei uma função para obter as coordenadas dentro dos limites estabelecido. A maçã tem que ser desenhada alinhada com a cobra e as funções/objetos _**(Surface, fill e blit.)**_ são relevantes para esse passo. Claro que a cor da maçã é vermelha representada em RGB por (255,0,0).<br> 
 
 **6º Passo:** A serpente deve colidi com a maçã para comer a mesma e “crescer” um segmento.<br>
 
@@ -46,7 +46,7 @@ Defini macros para o movimento da serpente que representam as posições:<br>
 
 **8º Passo:** Adicionei linhas de grid em nossa janela para marcar os segmentos. A cada 10 unidades na vertical e na horizontal desenhei uma linha utilizando uma função.<br>
 
-**9º Passo:** Adicionar score(pontos). Inicialmente o jogador começa com 0 ponto. Cada maçã representa um ponto (ou quantos pontos forem definidos). Para adicionar o score deve-se utilizar o módulo pygame.font, que é um módulo para carregar e renderizar fontes. 
+**9º Passo:** Adicionar _**score**_(pontos). Inicialmente o jogador começa com 0 ponto. Cada maçã representa um ponto (ou quantos pontos forem definidos). Para adicionar o score deve-se utilizar o módulo pygame.font, que é um módulo para carregar e renderizar fontes. 
 `game_over_font = pygame.font.Font('freesansbold.ttf', 70)`.<br>
 
  Criar um variável para fazer a contagem de pontos que inicia com 0 e é somada a cada vez que a cobra colide com a maçã. - Utilizar o método pygame.font.Front.render(text, antialias, color) para desenhar um texto em uma superfície. Antialias é um bool que define se os caracteres devem ter as bordas suavizadas if true the characters will have smooth edges. A função _**get_rect**_ do objeto Font retorna um retângulo que deverá ser posicionado na tela utilizando o método `topleft(x, y)`.<br> 
@@ -61,7 +61,7 @@ Defini macros para o movimento da serpente que representam as posições:<br>
 
 Para instalar o Python no seu sistema operacional Windows, você precisa baixar o instalador. Acesse o site oficial <a href="https://www.python.org/downloads/" target="_blank">neste link</a> e clique em download.
 
-Para executar um script Python na linha de comando, ele precisa estar gravado em um arquivo com a extensão “.py”. Abra o prompt de comando no Windows, ou o terminal no _**Linux/MacOS,**_ e digite python nome do arquivo.py lista de argumentos. Para que isso funcione, o interpretador Python precisa estar instalado na máquina e seu caminho deve estar configurado na variável PATH, fazendo com que o arquivo executável python esteja acessível a partir da linha de comando.
+Para executar um script Python na linha de comando, ele precisa estar gravado em um arquivo com a extensão “.py”. Abra o prompt de comando no Windows, ou o terminal no _**Linux/MacOS,**_ e digite python nome do arquivo.py lista de argumentos. Para que isso funcione, o interpretador Python precisa estar instalado na máquina e seu caminho deve estar configurado na variável _**PATH**_, fazendo com que o arquivo executável python esteja acessível a partir da linha de comando.
 
 ## Como instalar o Pygame pelo PIP?
 Depois de instalar o Python, instale o PyGame por meio da linha de comando (ou do terminal no VS Code) digitando python -m pip install -U pygame --user . Se tudo estiver certo, o jogo abrirá uma janela. Feche a janela quando terminar de jogar.<br>
@@ -72,4 +72,4 @@ Depois de instalar o Python, instale o PyGame por meio da linha de comando (ou d
  [![NPM](https://img.shields.io/npm/l/react)](https://github.com/RonaldoBento/pygame/blob/main/LICENSE) 
 
  
-Você tem todo o direito de usar esse material para seu próprio aprendizado. Espero que seja útil o conteúdo disponibilizado. Para rodar o jogo no seu computador ou em outro dispositivo é preciso ter instalado o Python 03. 
+Você tem todo o direito de usar esse material para seu próprio aprendizado. Espero que seja útil o conteúdo disponibilizado. Para rodar o jogo no seu computador ou em outro dispositivo é preciso ter instalado o Programa Python 03. 
